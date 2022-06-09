@@ -17,6 +17,7 @@
     <!-- endbuild -->
 
     <title>Sheane Natural Cosmetic Products</title>
+    <link rel="shortcut icon" href="./img/14.ico">
 </head>
 
 <body>
@@ -30,13 +31,18 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active"><a href="#" class="nav-link "><span class="fa fa-home fa-lg"></span> Home</a></li>
                 <li class="nav-item"><a href="./aboutus.html" class="nav-link"><span class="fa fa-info fa-lg"></span> About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-list fa-lg"></span> Menu</a></li>
+                <li class="nav-item"><a href="./product.html" class="nav-link"><span class="fa fa-list fa-lg"></span> Products</a></li>
                 <li class="nav-item"><a href="./contactus.html" class="nav-link"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
             </ul>
             <!-- ADDING THE MODAL LINK TO TRIGGER THE MODAL -->
             <span class="navbar-text">
                 <a href="#loginModal" class="Login" data-target="#loginModal">
                     <span class="fa fa-sign-in"> </span> Login
+                </a>
+            </span>
+            <span class="navbar-text px-5">
+                <a href="./signUp.html" class="" data-target="">
+                    <span class="fa fa-user-plus"> </span> Sign Up
                 </a>
             </span>
         </div>
@@ -73,10 +79,29 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-row">
-                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                            <button type="submit" class="btn btn-warning btn-sm ml-1">Sign in</button>        
-                        </div>
+                        <div class="text-center offset-md-3 align-self-center py-2" style="width: 50%;">
+                            <a href="./index.html" class="text-center "><button type="button" class="btn btn-outline-warning btn-block mb-4 hvr-float-shadow">Sign in</button></a>
+                          </div>
+                        <div class="text-center">
+                            <p>Not a member? <a href="./signUp.html">Register</a></p>
+                            <p>or sign up with:</p>
+                            <button type="button" class="btn btn-link btn-floating mx-1">
+                              <i class="fa fa-facebook-f"></i>
+                            </button>
+                        
+                            <button type="button" class="btn btn-link btn-floating mx-1">
+                              <i class="fa fa-google"></i>
+                            </button>
+                        
+                            <button type="button" class="btn btn-link btn-floating mx-1">
+                              <i class="fa fa-twitter"></i>
+                            </button>
+                        
+                            <button type="button" class="btn btn-link btn-floating mx-1">
+                              <i class="fa fa-github"></i>
+                            </button>
+                          </div>
+                        
                     </form>
                 </div>
             </div>
@@ -88,7 +113,7 @@
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Reserve a Table</h4>
+                    <h4 class="modal-title">Order Placement</h4>
                     <button class="close" type="button" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -96,7 +121,7 @@
                     <form action="">
                         <div class="form-group">
                             <div class="row">
-                                <div class="col-form-label col-sm-2 pt-0">Number of Guests</div>
+                                <div class="col-form-label col-sm-2 pt-0">Quantity of items</div>
     
                                 <div class="col-sm-10 d-flex justify-content-start">
     
@@ -142,15 +167,37 @@
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-form-label col-sm-2 pt-0">Section</div>
+                            <div class="col-form-label col-sm-2 pt-0">Product</div>
                             <div class="col-sm-10 d-flex justify-content-start">
                                 <div class="btn-group" data-toggle="buttons">
-                                    <label class="btn focus active" >
-                                        <input type="radio" name="is-smoking" id="option1" autocomplete="off"> Non-Smoking
+                                    <label class="btn">
+                                        <input type="radio" name="is-smoking" id="option1" autocomplete="off"> Sheane Face Cream
                                     </label>
                                     <label class="btn" >
-                                        <input type="radio" name="is-smoking" id="option2" autocomplete="off"> Smoking
+                                        <input type="radio" name="is-smoking" id="option2" autocomplete="off"> Sheane Hair Cream
                                     </label>
+                                    <label class="btn" >
+                                        <input type="radio" name="is-smoking" id="option2" autocomplete="off"> Sheane Body Cream
+                                    </label>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-form-label col-sm-2 pt-0"></div>
+                            <div class="col-sm-10 d-flex justify-content-start">
+                                <div class="btn-group" data-toggle="buttons">
+                                    <label class="btn">
+                                        <input type="radio" name="is-smoking" id="option1" autocomplete="off"> Sheane Carotene Facial Serum
+                                    </label>
+                                    <!-- <label class="btn" >
+                                        <input type="radio" name="is-smoking" id="option2" autocomplete="off"> Sheane Hair Cream
+                                    </label>
+                                    <label class="btn" >
+                                        <input type="radio" name="is-smoking" id="option2" autocomplete="off"> Sheane Body Cream
+                                    </label> -->
+                                    
                                 </div>
                             </div>
                         </div>
@@ -170,9 +217,10 @@
                                     </div>
                                 </div>
                         </div>
+                        
                         <div class="offset-md-2">
                             <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                            <button type="submit" class="btn btn-warning btn-sm ml-1">Reserve</button> 
+                            <button type="submit" class="btn btn-warning btn-sm ml-1">Order</button> 
                         </div>
                     </form>
                 </div>
@@ -184,8 +232,8 @@
 
     </div>
 
-    <header class="jumbotron">
-        <div class="container">
+    <header class="">
+        <!-- <div class="container">
             <div class="row row-header">
                 <div class="col-12 col-sm-6">
                     <h1>Sheane Natural Cosmetics Products</h1>
@@ -202,6 +250,26 @@
                     </a>
                 </div>
             </div>
+        </div> -->
+        <div class="text-center bg-image" style="
+            background-image: url('https://nul.care/wp-content/uploads/2021/02/sheabutter.png');
+            height: 420px;
+            margin-top: 0px;
+          ">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6); height: 420px; margin: 0px;">
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="text-white p-5">
+                <h1 class="mb-4">HOME</h1>
+                <h4 class="mb-5">Sheane Cosmetics</h4>
+                 <!-- <a class="btn btn-outline-light btn-lg " href="#!" role="button">Call to action</a>  -->
+                <div class="col-12 col-sm-3 align-self-center">
+                    <a href="#reserveModal" role="button" id="reserve" data-target="#reserveModal" class="hvr-float-shadow btn btn-outline-light btn-lg modalReserve">
+                        Order Your product
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
     </header>
 
@@ -211,7 +279,7 @@
         
         <div class="row row-content">
             <div class="col">
-                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                <div id="mycarousel" class="carousel slide carousel-fade" data-ride="carousel">
                     <div class="carousel-inner" role="listbox">
 
                         <!-- Remember to make changes to the tooltip details -->
@@ -227,7 +295,7 @@
                             </div>
                         </div>
 
-                        <div class="carousel-item" data-toggle="tooltip" data-html="true" title="Or Call us on <br/><strong>+250784857890</strong>" data-placement="bottom">
+                        <div class="carousel-item" data-toggle="tooltip" data-html="true" title="100% natural products <br/>Or Call us on <br/><strong>+250784857890</strong>" data-placement="bottom">
                             <img src="./img/facialcream.jpeg" alt="cream" height="220px" width="250px">
                             <div class="carousel-caption d-none d-md-block">
                                 <h2><strong>Sheane Facial Butter Cream </strong></h2>
@@ -238,7 +306,7 @@
                             </div>
                         </div>
 
-                        <div class="carousel-item" data-toggle="tooltip" data-html="true" title="Or Call us on <br/><strong>+250784857890</strong>" data-placement="bottom">
+                        <div class="carousel-item" data-toggle="tooltip" data-html="true" title="100% natural products <br/>Or Call us on <br/><strong>+250784857890</strong>" data-placement="bottom">
                             <img src="./img/carotene_sculp.jpeg" alt="oil" height="220px" width="250px">
                             <div class="carousel-caption d-none d-md-block">
                                 <h2><strong>Sheane Carotene Facial Serum </strong></h2>
@@ -250,7 +318,7 @@
                             </div>
                         </div>
 
-                        <div class="carousel-item" data-toggle="tooltip" data-html="true" title="Or Call us on <br/><strong>+250784857890</strong>" data-placement="bottom">
+                        <div class="carousel-item" data-toggle="tooltip" data-html="true" title="100% natural products <br/>Or Call us on <br/><strong>+250784857890</strong>" data-placement="bottom">
                             <img src="./img/haircream.jpeg" alt="raw butter" height="220px" width="270px">
                             <div class="carousel-caption d-none d-md-block">
                                 <h2><strong>Sheane Hair Butter Cream</strong></h2>
@@ -405,133 +473,116 @@
     </div>
 
 
-
-<!-- <div class="container" id="reserveForm">
-    <div class="row row-content align-items-center col-sm-8">
-    
-        <div class="card">
-            <h3 class="card-header text-white" style="background-color: #D79922;"><strong>Reserve a Table</strong></h3>
-            <div class="card-body">
-                <form action="">
-                    <div class="form-group">
-                        <div class="row" >
-                            <div class="col-form-label col-sm-2 pt-0">Number of Guests</div>
-
-                            <div class="col-sm-10 d-flex justify-content-start">
-
-                                <div class="form-check form-check-inline">
-                                    <label for="inlineRadio1" class="form-check-label">
-                                        <input type="radio" class="form-check-input" name="inlineRadioOptions" id="inlineRadio1" value="Option1"> 1
-                                    </label>
-                                </div>
-
-                                <div class="form-check form-check-inline">
-                                    <label for="inlineRadio1" class="form-check-label">
-                                        <input type="radio" class="form-check-input" name="inlineRadioOptions" id="inlineRadio2" value="Option2"> 2
-                                    </label>
-                                </div>
-
-                                <div class="form-check form-check-inline">
-                                    <label for="inlineRadio1" class="form-check-label">
-                                        <input type="radio" class="form-check-input" name="inlineRadioOptions" id="inlineRadio3" value="Option3"> 3
-                                    </label>
-                                </div>
-
-                                <div class="form-check form-check-inline">
-                                    <label for="inlineRadio1" class="form-check-label">
-                                        <input type="radio" class="form-check-input" name="inlineRadioOptions" id="inlineRadio4" value="Option1"> 4
-                                    </label>
-                                </div>
-
-                                <div class="form-check form-check-inline">
-                                    <label for="inlineRadio1" class="form-check-label">
-                                        <input type="radio" class="form-check-input" name="inlineRadioOptions" id="inlineRadio5" value="Option5"> 5
-                                    </label>
-                                </div>
-
-                                <div class="form-check form-check-inline">
-                                    <label for="inlineRadio1" class="form-check-label">
-                                        <input type="radio" class="form-check-input" name="inlineRadioOptions" id="inlineRadio6" value="Option6"> 6
-                                    </label>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label for="date" class="col-md-2 col-form-label">Date and Time</label>
-                            <div class="col-sm-4">
-                                <div class="input-group ">
-                                    <div class="input-group-addon"></div>
-                                    <input type="text" class="form-control" id="date" name="date" placeholder="Date" >
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="input-group">
-                                    <div class="input-group-addon"></div>
-                                    <input type="text" class="form-control" id="time" name="time" placeholder="Time">
-                                </div>
-                            </div>
-                    </div>
-                </form>
-               end of form 
-
-                <div class="offset-2">
-                    <button class="bg-warning btn" type="submit"> <strong>Reserve</strong> </button>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</div> -->
-
-
-
-
-    <footer class="footer">
+    <footer class="text-center text-white" style="background-color: #e6b860">
+        <!-- Grid container -->
         <div class="container">
-            <div class="row">             
-                <div class="col-4 offset-1 col-sm-2">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="./aboutus.html">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="./contactus.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-7 col-sm-5">
-                    <h5>Our Address</h5>
-                    <address>
-		              Kicukiro, KK12 Street<br>
-		              Kigali City<br>
-		              Rwanda<br>
-		              <i class="fa fa-phone fa-lg"></i>: +233 5491 85709<br>
-		              <i class="fa fa-fax fa-lg"></i>: +250 7848 57890<br>
-		              <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:i.busah123@gmail.com">i.busah123@gmail.com</a>
-		           </address>
-                </div>
-                <div class="col-12 col-sm-4 align-self-center">
-                    <div class="text-center">
-                        <a href="http://google.com/+" class="btn btn-social-icon btn-google"><i class="fa fa-google-plus fa-lg"></i></a>
-                        <a href="http://www.facebook.com/profile.php?id=" class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook fa-lg"></i></a>
-                        <a href="http://www.linkedin.com/in/" class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin fa-lg"></i></a>
-                        <a href="http://twitter.com/" class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter fa-lg"></i></a>
-                        <a href="http://youtube.com/" class="btn btn-social-icon btn-google"><i class="fa fa-youtube fa-lg"></i></a>
-                        <a href="mailto:" class="btn btn-social-icon"><i class="fa fa-envelope-o fa-lg"></i></a>
-                    </div>
-                </div>
-           </div>
-           <br><br>
-           <div class="row justify-content-center">             
-                <div class="col-auto">
-                    <p>© Copyright 2022 Sheane Cosmetics</p>
-                </div>
-           </div>
+          <!-- Section: Links -->
+          <section class="mt-5">
+            <!-- Grid row-->
+            <div class="row text-center d-flex justify-content-center pt-5">
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold active">
+                  <a href="#" class="text-white">Home</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="./aboutus.html" class="text-white">About Us</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="./product.html" class="text-white">Products</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <!-- <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Help</a>
+                </h6>
+              </div> -->
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold active">
+                  <a href="./contactus.html" class="text-white">Contact</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row-->
+          </section>
+          <!-- Section: Links -->
+    
+          <hr class="my-5" />
+    
+          
+    
+          <!-- Section: Social -->
+          <section class="text-center mb-5">
+            <!-- <a href="http://www.facebook.com/profile.php?id=" class="text-white me-6 hvr-float-shadow">
+              <i class="fa fa-facebook-f fa-md"></i>
+            </a>
+            <a href="http://twitter.com/" class="text-white me-6 hvr-float-shadow">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="http://google.com/+" class="text-white me-4 hvr-float-shadow">
+              <i class="fa fa-google"></i>
+            </a>
+            <a href="http://instagram.com/" class="text-white me-4 hvr-float-shadow">
+              <i class="fa fa-instagram"></i>
+            </a>
+            <a href="http://www.linkedin.com/in/" class="text-white me-4 hvr-float-shadow">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="http://youtube.com/" class="text-white me-4 hvr-float-shadow">
+              <i class="fa fa-youtube"></i>
+            </a> -->
+
+            <!-- <div class="d-flex justify-content-center py-5"> -->
+                <button type="button" class="btn btn-primary btn-md btn-floating mx-2 hvr-float-shadow" style="background-color: #0f0d0d;">
+                  <i class="fa fa-facebook-f"></i>
+                </button>
+                <button type="button" class="btn btn-primary btn-md btn-floating mx-2 hvr-float-shadow" style="background-color: #0f0d0d;">
+                  <i class="fa fa-youtube"></i>
+                </button>
+                <button type="button" class="btn btn-primary btn-md btn-floating mx-2 hvr-float-shadow" style="background-color: #0f0d0d;">
+                  <i class="fa fa-instagram"></i>
+                </button>
+                <button type="button" class="btn btn-primary btn-md btn-floating mx-2 hvr-float-shadow" style="background-color: #0f0d0d;">
+                  <i class="fa fa-twitter"></i>
+                </button>
+                <button type="button" class="btn btn-primary btn-md btn-floating mx-2 hvr-float-shadow" style="background-color: #0f0d0d;">
+                    <i class="fa fa-linkedin"></i>
+                  </button>
+              <!-- </div> -->
+          </section>
+          <!-- Section: Social -->
         </div>
-    </footer>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div
+             class="text-center p-3"
+             style="background-color: rgba(0, 0, 0, 0.2)"
+             >
+          © 2022 Copyright:
+          <a class="text-white" href="#"
+             >Sheane Cosmetics</a
+            >
+        </div>
+        <!-- Copyright -->
+      </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <!-- build:js js/main.js -->

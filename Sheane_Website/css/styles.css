@@ -13,7 +13,7 @@
     color: #F13C20; }
 
 .footer {
-  background-color: #C5CBE3;
+  background-color: #e6b860;
   margin: 0px auto;
   padding: 20px 0px; }
   .footer h5 {
@@ -78,7 +78,10 @@ blockquote {
   z-index: 1; }
 
 .modal-header {
-  background-color: #D79922; }
+  /* background-image: url('https://nul.care/wp-content/uploads/2021/02/sheabutter.png');
+  height: min-content; */
+  background-color: #D79922; 
+}
 
 .features-style-two {
   padding-bottom: 120px; }

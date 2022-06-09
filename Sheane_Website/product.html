@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- endbuild -->
+
+    <link rel="shortcut icon" href="./img/14.ico">
+    <title>Sheane Cosmetic Products: About Us</title>
+</head>
+<body>
+    
+
+    <header class="">
+
+        <style>
+            /* Carousel styling */
+            #introCarousel,
+            .carousel-inner,
+            .carousel-item,
+            .carousel-item.active {
+              height: 60vh;
+            }
+      
+            .carousel-item:nth-child(1) {
+              background-image: url('https://www.greenclimate.fund/sites/default/files/project/image-fp137.jpg');
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center center;
+            }
+      
+            .carousel-item:nth-child(2) {
+              background-image: url('https://www.garighe.it/img/cms/Screenshot%20(175).png');
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center center;
+            }
+      
+            .carousel-item:nth-child(3) {
+              background-image: url('http://specialtyproduce.com/sppics/12903.png');
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center center;
+            }
+      
+            /* Height for devices larger than 576px */
+            @media (min-width: 992px) {
+              #introCarousel {
+                margin-top: -58.59px;
+              }
+            }
+      
+            .navbar .nav-link {
+              color: #fff !important;
+            }
+            .introCarousel{
+                margin-top: 70px;
+            }
+            
+          </style>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">.
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="index.html" class="navbar-brand mr-auto"><img src="./img/2-img.png" alt="" height="38" width="50"></a>
+                <div class="collapse navbar-collapse" id="Navbar">
+                  <ul class="navbar-nav mr-auto">
+                      <li class="nav-item"><a href="./index.html" class="nav-link "><span class="fa fa-home fa-lg"></span> Home</a></li>
+                      <li class="nav-item"><a href="./aboutus.html" class="nav-link"><span class="fa fa-info fa-lg"></span> About</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-list fa-lg"></span> Products</a></li>
+                      <li class="nav-item"><a href="./contactus.html" class="nav-link"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                  </ul>
+                <!-- ADDING THE MODAL LINK TO TRIGGER THE MODAL -->
+                <span class="navbar-text">
+                    <a href="#loginModal" class="Login" data-target="#loginModal">
+                        <span class="fa fa-sign-in"> </span> Login
+                    </a>
+                </span>
+            </div>
+            </div>
+    
+        </nav>
+    
+        <!-- Navbar -->
+      
+       
+        <div id="introCarousel" class="carousel carousel-fade shadow-2-strong " data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#introCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#introCarousel" data-slide-to="1"></li>
+              <li data-target="#introCarousel" data-slide-to="2"></li>
+            </ol>
+      
+            <!-- Inner -->
+            <div class="carousel-inner introCarousel">
+              <!-- Single item -->
+              <div class="carousel-item active">
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.6); height: 60vh;">
+                  <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white text-center p-5">
+                      <h1 class="mb-3">Sheane Cosmetic Products</h1>
+                      <h5 class="mb-4">Serving Best Natural Glowing Cosmetic Products</h5>
+                      <a class="btn btn-outline-light btn-lg m-2 hvr-float-shadow" href="./index.html"
+                        role="button" rel="nofollow" target="_blank">Read More</a>
+                        <a href="#reserveModal" role="button" id="reserve" data-target="#reserveModal" class="hvr-float-shadow btn btn-outline-light btn-lg modalReserve">
+                            Order Your product
+                        </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Single item -->
+              <div class="carousel-item">
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.4); height: 60vh;">
+                  <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white text-center">
+                      <h2 class="text-white">Glow your Skin Naturally with Shea Butter</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Single item -->
+              <div class="carousel-item">
+                <div class="mask" style="
+                      background: linear-gradient(
+                        45deg,
+                        rgba(29, 236, 197, 0.5),
+                        rgba(91, 14, 214, 0.5) 100%
+                      ); height: 60vh;
+                    ">
+                  <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white text-center">
+                      <h2 class="text-white">Place Your Order Today!</h2>
+                      <a href="#reserveModal" role="button" id="reserve" data-target="#reserveModal" class="hvr-float-shadow btn btn-outline-light btn-lg modalReserve">
+                        Order Your product
+                    </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Inner -->
+      
+            <!-- Controls -->
+            <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        <!-- Background image -->
+      </header>
+
+      <!-- RESERVATION MODAL -->
+
+      <div class="modal" id="reserveModal" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Order Placement</h4>
+                    <button class="close" type="button" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-form-label col-sm-2 pt-0">Quantity of items</div>
+    
+                                <div class="col-sm-10 d-flex justify-content-start ">
+    
+                                    <div class="form-check form-check-inline">
+                                        <label for="inlineRadio1" class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="inlineRadioOptions" id="inlineRadio1" value="Option1"> 1
+                                        </label>
+                                    </div>
+    
+                                    <div class="form-check form-check-inline">
+                                        <label for="inlineRadio1" class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="inlineRadioOptions" id="inlineRadio2" value="Option2"> 2
+                                        </label>
+                                    </div>
+    
+                                    <div class="form-check form-check-inline">
+                                        <label for="inlineRadio1" class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="inlineRadioOptions" id="inlineRadio3" value="Option3"> 3
+                                        </label>
+                                    </div>
+    
+                                    <div class="form-check form-check-inline">
+                                        <label for="inlineRadio1" class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="inlineRadioOptions" id="inlineRadio4" value="Option1"> 4
+                                        </label>
+                                    </div>
+    
+                                    <div class="form-check form-check-inline">
+                                        <label for="inlineRadio1" class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="inlineRadioOptions" id="inlineRadio5" value="Option5"> 5
+                                        </label>
+                                    </div>
+    
+                                    <div class="form-check form-check-inline">
+                                        <label for="inlineRadio1" class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="inlineRadioOptions" id="inlineRadio6" value="Option6"> 6
+                                        </label>
+                                    </div>
+    
+    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-form-label col-sm-2 ">Product</div>
+                            <div class="col-sm-10 d-flex justify-content-start">
+                                <div class="btn-group " data-toggle="buttons">
+                                    <label class="btn">
+                                        <input type="radio" name="is-smoking" id="option1" autocomplete="off"> Sheane Face Cream
+                                    </label>
+                                    <label class="btn" >
+                                        <input type="radio" name="is-smoking" id="option2" autocomplete="off"> Sheane Hair Cream
+                                    </label>
+                                    <label class="btn" >
+                                        <input type="radio" name="is-smoking" id="option2" autocomplete="off"> Sheane Body Cream
+                                    </label>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-form-label col-sm-2 pt-0"></div>
+                            <div class="col-sm-10 d-flex justify-content-start">
+                                <div class="btn-group" data-toggle="buttons">
+                                    <label class="btn">
+                                        <input type="radio" name="is-smoking" id="option1" autocomplete="off"> Sheane Carotene Facial Serum
+                                    </label>
+                                    <!-- <label class="btn" >
+                                        <input type="radio" name="is-smoking" id="option2" autocomplete="off"> Sheane Hair Cream
+                                    </label>
+                                    <label class="btn" >
+                                        <input type="radio" name="is-smoking" id="option2" autocomplete="off"> Sheane Body Cream
+                                    </label> -->
+                                    
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="form-group row">
+                            <label for="date" class="col-md-2 col-form-label">Date and Time</label>
+                                <div class="col-sm-4">
+                                    <div class="input-group ">
+                                        <div class="input-group-addon"></div>
+                                        <input type="text" class="form-control" id="date" name="date" placeholder="Date" >
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"></div>
+                                        <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="offset-md-2">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-warning btn-sm ml-1">Order</button> 
+                        </div>
+                    </form>
+                </div>
+
+                
+            </div>
+
+        </div>
+
+    </div>
+    <!-- END OF MODAL -->
+
+    <!-- LOGIN MODAL -->
+    <div class="modal" id="loginModal" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-warning btn-sm ml-1">Sign in</button>        
+                        </div>
+                    </form> -->
+
+                    <form>
+                      <!-- Email input -->
+                      <div class="form-row px-3">
+                        <div class="form-group col-sm-6">
+                                <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                <input type="email" class="form-control form-control-sm mr-1 " id="exampleInputEmail3" placeholder="Enter email">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label class="sr-only" for="exampleInputPassword3">Password</label>
+                            <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                        </div>
+                        </div>
+                    
+                      <!-- 2 column grid layout for inline styling -->
+                      <div class="row mb-4">
+                        <div class="col d-flex justify-content-center">
+                          <!-- Checkbox -->
+                          <div class="form-check px-2">
+                            <input class="form-check-input" type="checkbox" value="" id="form2Example31" unchecked />
+                            <label class="form-check-label" for="form2Example31"> Remember me </label>
+                          </div>
+                        </div>
+                    
+                        <div class="col px-5">
+                          <!-- Simple link -->
+                          <a href="#!">Forgot password?</a>
+                        </div>
+                      </div>
+                    
+                      <!-- Submit button -->
+                      <div class="text-center offset-md-3 align-self-center" style="width: 50%;">
+                        <a href="./index.html" class="text-center "><button type="button" class="btn btn-outline-warning btn-block mb-4">Sign in</button></a>
+                      </div>
+                        
+                      
+                        
+                     
+                      
+                      
+                    
+                      <!-- Register buttons -->
+                      <div class="text-center">
+                        <p>Not a member? <a href="./signUp.html">Register</a></p>
+                        <p>or sign up with:</p>
+                        <button type="button" class="btn btn-link btn-floating mx-1">
+                          <i class="fa fa-facebook-f"></i>
+                        </button>
+                    
+                        <button type="button" class="btn btn-link btn-floating mx-1">
+                          <i class="fa fa-google"></i>
+                        </button>
+                    
+                        <button type="button" class="btn btn-link btn-floating mx-1">
+                          <i class="fa fa-twitter"></i>
+                        </button>
+                    
+                        <button type="button" class="btn btn-link btn-floating mx-1">
+                          <i class="fa fa-github"></i>
+                        </button>
+                      </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OF MODAL -->
+
+    
+
+
+    <main class="mt-5">
+        <div class="container">
+          <!--Section: Content-->
+          <section>
+            <div class="row">
+              <div class="col-md-6 gx-5 mb-4">
+                <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-ripple-color="light">
+                  <img src="http://specialtyproduce.com/sppics/12903.png" class="img-fluid" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+              </div>
+    
+              <div class="col-md-6 gx-5 mb-4">
+                <h4><strong>Shea Fruits: Current Facts </strong></h4>
+                <p class="text-muted text-justify">
+                  Botanically known as <em>Vitellaria Paradoxa</em>, shea tree, also known as shea nut tree or shea butter can 
+                  live for up to 300 years. They take 20 to 30 years to reach maturity and begin producing fruits. Once 
+                  they begin, they can produce for the next 200 years. The fruit contain a relatively large and oily nut,
+                  used to make Shea Butter. For a Sub-Saharan African country like Ghana, the fruit provides an important
+                  source of income for the people.
+                </p>
+                <p><strong>Nutritional Value & Application</strong></p>
+                <p class="text-muted text-justify">
+                  Shea fruit is harvested primarily for the oil within its kernel, an extraction process that can take up to 8 hours and 
+                  involves multiple steps. The fruits are rich in carbohydrates, protein and fat as well as potassium and antioxidant phenols.
+
+                </p>
+              </div>
+            </div>
+          </section>
+          <!--Section: Content-->
+    
+          <hr class="my-5" />
+    
+          <!--Section: Content-->
+          <section class="text-center">
+            <h4 class="mb-5"><strong>Products</strong></h4>
+    
+            <div class="row">
+              <div class="col-lg-4 col-md-12 mb-4">
+                <div class="card">
+                  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="./img/facecream.jpeg" class="img-fluid" height="250"/>
+                    <a href="#!">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: #2b459b;"><strong>Sheane Face Cream</strong></h5>
+                    <p class="card-text">
+                        Perfect combination for a smooth and healthy face. Non-greasy, no additives.
+                    </p>
+                    <a href="#reserveModal" class="btn btn-warning hvr-float-shadow modalReserve" role="button" id="reserve" data-target="#reserveModal">Order</a>
+                    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="./img/haircream.jpeg" class="img-fluid" />
+                    <a href="#!">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: #2b459b;"><strong>Sheane Hair Cream</strong></h5>
+                    <p class="card-text">
+                        Moisturize your hair with Sheane hair cream! Rich in minerals, great for your hair!
+                    </p>
+                    <a href="#reserveModal" class="btn btn-warning hvr-float-shadow modalReserve" role="button" id="reserve" data-target="#reserveModal">Order</a>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="./img/creams.jpeg" class="img-fluid"/>
+                    <a href="#!">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: #2b459b;"><strong>Sheane Body Cream</strong></h5>
+                    <p class="card-text">
+                        Get that body glow with Sheane Body Cream, natural plant-based products.
+                    </p>
+                    <a href="#reserveModal" class="btn btn-warning hvr-float-shadow modalReserve" role="button" id="reserve" data-target="#reserveModal">Order</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+    
+
+    <footer class="text-center text-lg-start" style="background-color: #e6b860;">
+        <div class="container d-flex justify-content-center py-5">
+                <button type="button" class="btn btn-primary btn-md btn-floating mx-2 hvr-float-shadow" style="background-color: #0f0d0d;">
+                  <i class="fa fa-facebook-f"></i>
+                </button>
+                <button type="button" class="btn btn-primary btn-md btn-floating mx-2 hvr-float-shadow" style="background-color: #0f0d0d;">
+                  <i class="fa fa-youtube"></i>
+                </button>
+                <button type="button" class="btn btn-primary btn-md btn-floating mx-2 hvr-float-shadow" style="background-color: #0f0d0d;">
+                  <i class="fa fa-instagram"></i>
+                </button>
+                <button type="button" class="btn btn-primary btn-md btn-floating mx-2 hvr-float-shadow" style="background-color: #0f0d0d;">
+                  <i class="fa fa-twitter"></i>
+                </button>
+                <button type="button" class="btn btn-primary btn-md btn-floating mx-2 hvr-float-shadow" style="background-color: #0f0d0d;">
+                    <i class="fa fa-linkedin"></i>
+                  </button>
+        </div>
+    
+        
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright:
+          <a class="text-white" href="#">Sheane Cosmetics</a>
+        </div>
+      </footer>
+      
+    
+      <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

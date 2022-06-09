@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <!-- endbuild -->
 
+    <link rel="shortcut icon" href="./img/14.ico">
     <title>Sheane Cosmetic Products: About Us</title>
 
 </head>
@@ -32,7 +33,7 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a href="./index.html" class="nav-link "><span class="fa fa-home fa-lg"></span> Home</a></li>
                 <li class="nav-item active"><a href="./aboutus.html" class="nav-link"><span class="fa fa-info fa-lg"></span> About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-list fa-lg"></span> Menu</a></li>
+                <li class="nav-item"><a href="./product.html" class="nav-link"><span class="fa fa-list fa-lg"></span> Products</a></li>
                 <li class="nav-item"><a href="./contactus.html" class="nav-link"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
             </ul>
         </div>
@@ -40,8 +41,8 @@
 
     </nav>
 
-    <header class="jumbotron">
-        <div class="container">
+    <header class="">
+        <!-- <div class="container">
             <div class="row row-header">
                 <div class="col-12 col-sm-6">
                     <h1>Sheane Natural Cosmetics Products</h1>
@@ -51,11 +52,33 @@
                     <img src="./img/2-img.png" alt="" class="img-fluid">
                 </div>
             </div>
+        </div> -->
+
+        <div class="text-center bg-image" style="
+            background-image: url('https://www.greenclimate.fund/sites/default/files/project/image-fp137.jpg');
+            height: 420px;
+            margin-top: 0px;
+          ">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6); height: 420px; margin: 0px;">
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="text-white p-5">
+                <h1 class="mb-5">ABOUT US</h1>
+                <h4 class="mb-5">Sheane Cosmetics</h4>
+                 <!-- <a class="btn btn-outline-light btn-lg " href="#!" role="button">Call to action</a>  -->
+                <div class="col-12 col-sm-3 align-self-center">
+                    <a href="./product.html" role="button" id="reserve" data-target="#reserveModal" class="hvr-float-shadow btn btn-outline-light btn-lg modalReserve">
+                        <strong>Check Our Products</strong>
+                    
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
     </header>
 
     <div class="container">
-        <div class="row">
+        <!-- <div class="row">
             <ol class="col-12 breadcrumb">
                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
                 <li class="breadcrumb-item active"> About Us </li>
@@ -64,18 +87,18 @@
                <h3>About Us</h3>
                <hr>
             </div>
-        </div>
+        </div> -->
 
         <div class="row row-content">
             <div class="col-sm-6 ">
                 <h2 style="color: #2b459b;"><strong> Our History</strong></h2>
                 <br>
-                <p>Started in 2020, Sheane Cosmetics quickly established itself as a shea butter products icon par excellence in Rwanda. With its unique brand of 100% natural products that can be found nowhere else, it enjoys patronage from the A-list clientele in Rwanda. Featuring several recommendations and proven-results from customers in the Rwanda, you never know what will happen to your skin and hair when you choose our products.</p>
+                <p class="text-justify">Started in 2020, Sheane Cosmetics quickly established itself as a shea butter products icon par excellence in Rwanda. With its unique brand of 100% natural products that can be found nowhere else, it enjoys patronage from the A-list clientele in Rwanda. Featuring several recommendations and proven-results from customers in the Rwanda, you never know what will happen to your skin and hair when you choose our products.</p>
                 <!-- <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p> -->
             </div>
             
 
-            <div class="col-12 col-sm-6">
+            <!-- <div class="col-12 col-sm-6">
                 <div class="card">
                     <h3 class="card-header text-white" style="background-color: #D79922;">Facts at a Glance</h3>
                     <div class="card-body">
@@ -89,7 +112,16 @@
                         </dl>
                     </div>
                 </div>
-            </div>
+            </div> -->
+
+            <div class="col-md-6 gx-5 mb-4">
+                <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-ripple-color="light">
+                  <img src="./img/2-img.png" class="img-fluid" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+              </div>
             
             
 
@@ -138,16 +170,15 @@
                 <div id="accordion">
                     <div class="card">
                         <div class="card-header" role="tab" id="peterheader">
-                            <h4 class="mb-0"><a data-toggle="collapse" href="" data-target="#peter"> Peter Pan <small> - Chief Epicurious Officer</small></a></h4>
+                            <h4 class="mb-0"><a data-toggle="collapse" href="" data-target="#peter"> Mardia Adams <small> - Founder</small></a></h4>
                         </div>
 
                         <div role="tabpanel" class="collapse show" id="peter" data-parent="#accordion">
                             <div class="card-body">
-                                <p class="d-none d-sm-block">Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey
-                                    to the shores of America with the intention of giving their children the best future. His mother's wizardy
-                                    in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket,
-                                    was his first inspiration to create the fusion cuisines for which <em>The Frying Pan</em> became well known.
-                                    He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections.</p>
+                                <p class="d-none d-sm-block">Our CEO, Mardia, credits her passion to the agricultural riches of her hometown, the leading producer of shea fruits and butter. Having stayed in the Northern region in Ghana
+                                    and enjoyed the fun of going to gather shea fruits,
+                                    was her first inspiration to create the <em>Sheane Cosmetic Products</em>.
+                                    She seeks to produce natural cosmetic product from shea butter to glow the melanin skin of Africans</p>
                             </div>
                             
                         </div>
@@ -155,16 +186,15 @@
                     
                     <div class="card">
                         <div class="card-header" role="tab" id="dannyheader">
-                            <h4 class="mb-0"><a data-toggle="collapse" data-target="#danny" href="">Dhanasekaran Witherspoon <small> - Chief Food Officer</small></a> </h4>
+                            <h4 class="mb-0"><a data-toggle="collapse" data-target="#danny" href="">Irene Busah <small> - Software Engineer</small></a> </h4>
                         </div>
 
                         
                         <div role="tabpanel" id="danny" class="collapse" data-parent="#accordion">
                             <div class="card-body">
-                                <p class="d-none d-sm-block">Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family
-                                    tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great
-                                    appreciation for varieties of food sources. As he puts it in his own words, <em>Everything that runs, wins, and
-                                    everything that stays, pays!</em></p>
+                                <p class="d-none d-sm-block">Our Software Developer, Irene, as she is affectionately referred to by her colleagues. 
+                                    Diligent Software engineer with 2+ years experience in commercial application development. Eager to build innovative
+                                    and cutting edge business solutions for the impressive suite of clients within its global reach.</p>
                             </div>
                             
                         </div>
@@ -174,20 +204,19 @@
                     <div class="card">
                         <div class="card-header" role="tab" id="agumbeheader">
                             <h4 class="mb-0"> 
-                               <a data-toggle="collapse" data-target="#agumbe" href="">Agumbe Tang <small> - Chief Taste Officer</small></a> </h4>
+                               <a data-toggle="collapse" data-target="#agumbe" href="">Florence Vondee <small> - Social Media Manager</small></a> </h4>
                         </div>
                         <div role="tabpanel" id="agumbe" class="collapse" data-parent="#accordion">
                             <div class="card-body">
-                                <p class="d-none d-sm-block">Blessed with the most discerning gustatory sense, Agumbe, our CTO, personally ensures that every dish that we
-                                    serve meets his exacting tastes. Our chefs dread the tongue lashing that ensues if their dish does not meet his 
-                                    exacting standards. He lives by his motto, <em>You click only if you survive my lick.</em></p>
+                                <p class="d-none d-sm-block">Blessed with the most discerning influencer, Florence, our Social Media and HR Manager, personally ensures that every customer that we
+                                    serve meets his satisfaction of our products.</p>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="card">
+                    <!-- <div class="card">
                         <div class="card-header" role="tab" id="albertoheader">
-                            <h4 class="mb-0"><a data-toggle="collapse" data-target="#alberto" href="">Alberto Somayya <small>Executive Chef</small></a> </h4>
+                            <h4 class="mb-0"><a data-toggle="collapse" data-target="#alberto" href=""> <small>Executive Chef</small></a> </h4>
                         </div>
                         <div role="tabpanel" id="alberto" class="collapse" data-parent="#accordion">
                             <div class="card-bdy">
@@ -196,7 +225,7 @@
                                     the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!</em></p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     
                     
@@ -350,10 +379,10 @@
                                 <!-- <i class="industrio-icon-innovation"></i> -->
                                 <img src="./img/patch-check-fill.svg" height="40px" width="40px" alt="">
                                 <h3>Who We Are</h3>
-                                <p>One of the promising manufacturers, suppliers and exporters of quartz, sodium and potash feldspar, silica sand, dolomite, abrasive sand and talc minerals.</p>
-                            </div><!-- /.inner -->
-                        </div><!-- /.single-features-style-two -->
-                    </div><!-- /.col-md-4 col-sm-6 col-xs-12 -->
+                                <p>One of the promising producers and suppliers of 100% Natural shea butter cosmetic products, facial products, and body creams</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="single-features-style-two hvr-bounce-to-bottom">
                             <div class="inner">
@@ -361,70 +390,152 @@
                                 <img src="./img/shield-fill-check.svg" alt="" height="40px" width="40px">
                                 <i class="industrio-icon-secure-shield bi bi-shield-fill-check"></i>
                                 <h3>Our Security</h3>
-                                <p>The quality of our products meets the international standards and ethical trading initiative requirements with a committed team dedicated to providing the best, quality materials.
+                                <p>The quality of our products meets the standards and ethical trading initiative requirements with a committed team dedicated to providing the best, quality products.
     
                                 </p>
-                            </div><!-- /.inner -->
-                        </div><!-- /.single-features-style-two -->
-                    </div><!-- /.col-md-4 col-sm-6 col-xs-12 -->
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="single-features-style-two hvr-bounce-to-bottom">
                             <div class="inner">
                                 <img src="./img/person-workspace.svg" height="40px" width="40px" alt="">
                                 <!-- <i class="industrio-icon-support"></i> -->
                                 <h3>Our Process</h3>
-                                <p>Our company has huge production and storage capacity, with technical expertise to operate the manufacturing
+                                <p>Our company has enough production and storage capacity, with technical expertise to operate the manufacturing
                                     storage, packaging and supplying departments.
                                 </p>
-                            </div><!-- /.inner -->
-                        </div><!-- /.single-features-style-two -->
-                    </div><!-- /.col-md-4 col-sm-6 col-xs-12 -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </section><!-- /.features-style-two -->
-    
-
-    <footer class="footer">
-        <div class="container">
-            <div class="row">             
-                <div class="col-4 offset-1 col-sm-2">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="./contactus.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-7 col-sm-5">
-                    <h5>Our Address</h5>
-                    <address>
-                        Kicukiro, KK12 Street<br>
-                        Kigali<br>
-                        Rwanda<br>
-                        <i class="fa fa-phone fa-lg"></i>: +233 5491 85709<br>
-                        <i class="fa fa-fax fa-lg"></i>: +250 7848 57890<br>
-                        <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
-                     </address>
-                </div>
-                <div class="col-12 col-sm-4 align-self-center">
-                    <div class="text-center">
-                        <a href="http://google.com/+" class="btn btn-social-icon btn-google"><i class="fa fa-google-plus fa-lg"></i></a>
-                        <a href="http://www.facebook.com/profile.php?id=" class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook fa-lg"></i></a>
-                        <a href="http://www.linkedin.com/in/" class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin fa-lg"></i></a>
-                        <a href="http://twitter.com/" class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter fa-lg"></i></a>
-                        <a href="http://youtube.com/" class="btn btn-social-icon btn-google"><i class="fa fa-youtube fa-lg"></i></a>
-                        <a href="mailto:" class="btn btn-social-icon"><i class="fa fa-envelope-o fa-lg"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-           </div>
-           <div class="row justify-content-center">             
-                <div class="col-auto">
-                    <p>© Copyright 2022 Sheane Cosmetics</p>
+            </div>
+        </section>
+    
+
+        <footer class="text-center text-white" style="background-color: #e6b860">
+            <!-- Grid container -->
+            <div class="container">
+              <!-- Section: Links -->
+              <section class="mt-5">
+                <!-- Grid row-->
+                <div class="row text-center d-flex justify-content-center pt-5">
+                  <!-- Grid column -->
+                  <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                      <a href="./index.html" class="text-white">Home</a>
+                    </h6>
+                  </div>
+                  <!-- Grid column -->
+        
+                  <!-- Grid column -->
+                  <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold active">
+                      <a href="#" class="text-white">About Us</a>
+                    </h6>
+                  </div>
+                  <!-- Grid column -->
+        
+                  <!-- Grid column -->
+                  <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                      <a href="./product.html" class="text-white">Products</a>
+                    </h6>
+                  </div>
+                  <!-- Grid column -->
+        
+                  <!-- Grid column -->
+                  <!-- <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                      <a href="#!" class="text-white">Help</a>
+                    </h6>
+                  </div> -->
+                  <!-- Grid column -->
+        
+                  <!-- Grid column -->
+                  <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                      <a href="./contactus.html" class="text-white">Contact</a>
+                    </h6>
+                  </div>
+                  <!-- Grid column -->
                 </div>
-           </div>
-        </div>
-    </footer>
+                <!-- Grid row-->
+              </section>
+              <!-- Section: Links -->
+        
+              <hr class="my-5" />
+        
+              <!-- Section: Text -->
+              <!-- <section class="mb-5">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-lg-8">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                      distinctio earum repellat quaerat voluptatibus placeat nam,
+                      commodi optio pariatur est quia magnam eum harum corrupti
+                      dicta, aliquam sequi voluptate quas.
+                    </p>
+                  </div>
+                </div>
+              </section> -->
+              <!-- Section: Text -->
+        
+              <!-- Section: Social -->
+              <section class="text-center mb-5">
+                <!-- <a href="http://www.facebook.com/profile.php?id=" class="text-white me-6 hvr-float-shadow">
+                  <i class="fa fa-facebook-f fa-md"></i>
+                </a>
+                <a href="http://twitter.com/" class="text-white me-6 hvr-float-shadow">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a href="http://google.com/+" class="text-white me-4 hvr-float-shadow">
+                  <i class="fa fa-google"></i>
+                </a>
+                <a href="http://instagram.com/" class="text-white me-4 hvr-float-shadow">
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a href="http://www.linkedin.com/in/" class="text-white me-4 hvr-float-shadow">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="http://youtube.com/" class="text-white me-4 hvr-float-shadow">
+                  <i class="fa fa-youtube"></i>
+                </a> -->
+    
+                <!-- <div class="d-flex justify-content-center py-5"> -->
+                    <button type="button" class="btn btn-primary btn-md btn-floating mx-2 hvr-float-shadow" style="background-color: #0f0d0d;">
+                      <i class="fa fa-facebook-f"></i>
+                    </button>
+                    <button type="button" class="btn btn-primary btn-md btn-floating mx-2 hvr-float-shadow" style="background-color: #0f0d0d;">
+                      <i class="fa fa-youtube"></i>
+                    </button>
+                    <button type="button" class="btn btn-primary btn-md btn-floating mx-2 hvr-float-shadow" style="background-color: #0f0d0d;">
+                      <i class="fa fa-instagram"></i>
+                    </button>
+                    <button type="button" class="btn btn-primary btn-md btn-floating mx-2 hvr-float-shadow" style="background-color: #0f0d0d;">
+                      <i class="fa fa-twitter"></i>
+                    </button>
+                    <button type="button" class="btn btn-primary btn-md btn-floating mx-2 hvr-float-shadow" style="background-color: #0f0d0d;">
+                        <i class="fa fa-linkedin"></i>
+                      </button>
+                  <!-- </div> -->
+              </section>
+              <!-- Section: Social -->
+            </div>
+            <!-- Grid container -->
+        
+            <!-- Copyright -->
+            <div
+                 class="text-center p-3"
+                 style="background-color: rgba(0, 0, 0, 0.2)"
+                 >
+              © 2022 Copyright:
+              <a class="text-white" href="#"
+                 >Sheane Cosmetics</a
+                >
+            </div>
+            <!-- Copyright -->
+          </footer>
     <!-- build:js js/main.js -->
     <script src="js/scripts.js"></script>
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>

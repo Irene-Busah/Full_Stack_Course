@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+    <link rel="shortcut icon" href="./img/14.ico">
     <title>Sheane Cosmetic Products: About Us</title>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover.css">
     <link href="css/styles.css" rel="stylesheet">
     <!-- endbuild -->
 </head>
@@ -24,24 +25,26 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="#"><img src="./img/2-img.png" alt="" height="38" width="50"></a>
+            <a class="navbar-brand mr-auto" href="./index.html"><img src="./img/2-img.png" alt="" height="38" width="50"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                         <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./product.html"><span class="fa fa-list fa-lg"></span> Products</a></li>
                         <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="jumbotron">
+    <header class="" style="background-image: url('https://www.greenclimate.fund/sites/default/files/project/image-fp137.jpg');
+    height: 350px;
+    margin-top: 0px;">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-6">
-                    <h1>Sheane Natural Cosmetic Products</h1>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                <div class="col-12 col-sm-6 pt-5">
+                    <h1 class="text-bold">Sheane Natural Cosmetic Products</h1>
+                    <p>We take pride in our body, fair and hair natural products to moisturize, glow and enhance your body, hair, and face.  Feed your melanin with African richness…Shea butter!</p>
                 </div>
                 <div class="col-12 col-sm align-self-center">
                     <img src="./img/2-img.png" alt="" class="img-fluid">
@@ -51,7 +54,7 @@
     </header>
 
     <div class="container">
-        <div class="row">
+        <!-- <div class="row">
             <ol class="col-12 breadcrumb">
                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
                 <li class="breadcrumb-item active">Contact Us</li>
@@ -60,34 +63,57 @@
                <h3>Contact Us</h3>
                <hr>
             </div>
-        </div>
+        </div> -->
 
         <div class="row row-content">
            <div class="col-12">
               <h3>Location Information</h3>
            </div>
-            <div class="col-12 col-sm-4 offset-sm-1">
+            <div class="col-12 col-sm-4">
                    <h5>Our Address</h5>
                     <address style="font-size: 100%">
 		              Kicukiro, KK12 Street<br>
 		              Kigali City<br>
 		              Rwanda<br>
-		              <i class="fa fa-phone"></i>: +233 5491 85709<br>
+		              <i class="fa fa-whatsapp"></i>: +233 5491 85709<br>
 		              <i class="fa fa-fax"></i>: +250 7848 57890<br>
 		              <i class="fa fa-envelope"></i>:
                         <a href="mailto:i.busah123@gmail.com">i.busah123@gmail.com</a>
 		           </address>
-            </div>
-            <div class="col-12 col-sm-6 offset-sm-1">
-                <h5>Map of our Location</h5>
-            </div>
-            <div class="col-12 col-sm-11 offset-sm-1">
-                <div class="btn-group" role="group">
-                    <a href="tel:+250784857890" role="button" class="btn btn-primary"> <i class="fa fa-phone"></i> Call</a>
-                    <a href="" role="button" class="btn btn-info"> <i class="fa fa-skype"></i> Skype</a>
-                    <a href="mailto:i.busah123@gmail.com" role="button" class="btn btn-success"> <i class="fa fa-envelope-o"></i> Email</a>
+                   <br>
+                   <div class="btn-group" role="group">
+                    <a href="tel:+250784857890" role="button" class="btn btn-primary hvr-float-shadow"> <i class="fa fa-phone"></i> Call</a>
+                    <a href="" role="button" class="btn btn-info hvr-float-shadow"> <i class="fa fa-skype"></i> Skype</a>
+                    <a href="mailto:i.busah123@gmail.com" role="button" class="btn btn-success hvr-float-shadow"> <i class="fa fa-envelope-o"></i> Email</a>
                 </div>
             </div>
+
+            <!-- ADDING THE MAP -->
+            <div class="col-12 col-sm-6">
+                <!-- <div class="col-12"><h5>Map of our Location</h5></div> -->
+                
+
+                <!-- <div class="col-12 col-md-5"> -->
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="500" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=Rwanda,%20Kigali,%20Kicukiro&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+    
+                            </iframe>
+                            <!-- <a href="https://123movies-to.org">123movies</a> -->
+                            <br><style>.mapouter{position:relative;text-align:right;height:361px;width:674px;}</style>
+                            <a href="https://www.embedgooglemap.net"></a>
+                            <style>.gmap_canvas {overflow:hidden;background:none!important;height:361px;width:674px;}</style>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+                
+                
+                
+            
+            <!-- <div class="col-12 col-sm-11 offset-sm-1">
+                
+            </div> -->
         </div>
 
         <div class="row row-content">
@@ -156,7 +182,7 @@
 
                             <div class="form-group row">
                                 <div class="offset-md-2 col-md-10">
-                                    <button type="submit" class="btn btn-primary">Send Feedback</button>
+                                    <button type="submit" class="btn btn-warning hvr-float-shadow">Send Feedback</button>
                                 </div>
                             </div>
                 </form>
@@ -167,48 +193,129 @@
 
     </div>
 
-    <footer class="footer">
+    <footer class="text-center text-white" style="background-color: #e6b860">
+        <!-- Grid container -->
         <div class="container">
-            <div class="row">             
-                <div class="col-4 offset-1 col-sm-2">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./aboutus.html">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-7 col-sm-5">
-                    <h5>Our Address</h5>
-                    <address>
-		              Kicukiro, KK12 Street<br>
-		              Kigali City<br>
-		              Rwanda<br>
-                      <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
-                      <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
-                      <i class="fa fa-envelope fa-lg"></i>: 
-                      <a href="mailto:i.busah123@gmail.com">i.busah123@gmail.com</a>
-		           </address>
-                </div>
-                <div class="col-12 col-sm-4 align-self-center">
-                    <div class="text-center">
-                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
-                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
-                    </div>
-                </div>
-           </div>
-           <div class="row justify-content-center">             
-                <div class="col-auto">
-                    <p>© Copyright 2022 Sheane Cosmetics</p>
-                </div>
-           </div>
+          <!-- Section: Links -->
+          <section class="mt-5">
+            <!-- Grid row-->
+            <div class="row text-center d-flex justify-content-center pt-5">
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="./index.html" class="text-white">Home</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="./aboutus.html" class="text-white">About Us</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="./product.html" class="text-white">Products</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <!-- <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Help</a>
+                </h6>
+              </div> -->
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="./contactus.html" class="text-white">Contact</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row-->
+          </section>
+          <!-- Section: Links -->
+    
+          <hr class="my-5" />
+    
+          <!-- Section: Text -->
+          <!-- <section class="mb-5">
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-8">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                  distinctio earum repellat quaerat voluptatibus placeat nam,
+                  commodi optio pariatur est quia magnam eum harum corrupti
+                  dicta, aliquam sequi voluptate quas.
+                </p>
+              </div>
+            </div>
+          </section> -->
+          <!-- Section: Text -->
+    
+          <!-- Section: Social -->
+          <section class="text-center mb-5">
+            <!-- <a href="http://www.facebook.com/profile.php?id=" class="text-white me-6 hvr-float-shadow">
+              <i class="fa fa-facebook-f fa-md"></i>
+            </a>
+            <a href="http://twitter.com/" class="text-white me-6 hvr-float-shadow">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="http://google.com/+" class="text-white me-4 hvr-float-shadow">
+              <i class="fa fa-google"></i>
+            </a>
+            <a href="http://instagram.com/" class="text-white me-4 hvr-float-shadow">
+              <i class="fa fa-instagram"></i>
+            </a>
+            <a href="http://www.linkedin.com/in/" class="text-white me-4 hvr-float-shadow">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="http://youtube.com/" class="text-white me-4 hvr-float-shadow">
+              <i class="fa fa-youtube"></i>
+            </a> -->
+
+            <!-- <div class="d-flex justify-content-center py-5"> -->
+                <button type="button" class="btn btn-primary btn-md btn-floating mx-2 hvr-float-shadow" style="background-color: #0f0d0d;">
+                  <i class="fa fa-facebook-f"></i>
+                </button>
+                <button type="button" class="btn btn-primary btn-md btn-floating mx-2 hvr-float-shadow" style="background-color: #0f0d0d;">
+                  <i class="fa fa-youtube"></i>
+                </button>
+                <button type="button" class="btn btn-primary btn-md btn-floating mx-2 hvr-float-shadow" style="background-color: #0f0d0d;">
+                  <i class="fa fa-instagram"></i>
+                </button>
+                <button type="button" class="btn btn-primary btn-md btn-floating mx-2 hvr-float-shadow" style="background-color: #0f0d0d;">
+                  <i class="fa fa-twitter"></i>
+                </button>
+                <button type="button" class="btn btn-primary btn-md btn-floating mx-2 hvr-float-shadow" style="background-color: #0f0d0d;">
+                    <i class="fa fa-linkedin"></i>
+                  </button>
+              <!-- </div> -->
+          </section>
+          <!-- Section: Social -->
         </div>
-    </footer>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div
+             class="text-center p-3"
+             style="background-color: rgba(0, 0, 0, 0.2)"
+             >
+          © 2022 Copyright:
+          <a class="text-white" href="#"
+             >Sheane Cosmetics</a
+            >
+        </div>
+        <!-- Copyright -->
+      </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
