@@ -2,4 +2,3 @@ node_modules
 dist
 Gruntfile
 package-lock.json
-.env
